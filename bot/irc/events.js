@@ -26,7 +26,7 @@ class Events {
     };
 
     this.join = () => {
-      this.app.log(`${irc.org}: ${irc.config.notice}`)
+      this.app.log(`${irc.org}: ${irc.config.notice}`);
       if (irc.config.notice === undefined) irc.config.notice = false;
       if (!irc.config.notice) {
         this.write(`JOIN ${irc.config.irc.channel}`);
